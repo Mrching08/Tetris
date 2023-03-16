@@ -1,0 +1,18 @@
+/*kapoya do */
+/*BEWAREOFDOGGS*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: rgb(194, 136, 136);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  background-color: rgb(20, 7, 7);
+  border: solid rgb(30, 255, 0) 2px;
+}
