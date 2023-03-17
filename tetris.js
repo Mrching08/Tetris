@@ -119,7 +119,7 @@ function getRandomInt(min, max) {
     context.font = '36px monospace';
     context.textAlign = 'center';
     context.textBaseline = 'middle';
-    context.fillText('BUGO KURAY!', canvas.width / 2, canvas.height / 2);
+    context.fillText('GAME OVER!', canvas.width / 2, canvas.height / 2);
   }
   //tiwason ugma
   const canvas = document.getElementById('game');
