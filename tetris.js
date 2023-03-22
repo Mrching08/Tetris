@@ -104,7 +104,30 @@ function getRandomInt(min, max) {
   
     tetromino = getNextTetromino();
   }
-  
+  function moveTetromino(direction) {
+  const nextX = tetromino.col + direction;
+
+  if (isValidMove(tetromino.matrix, tetromino.row, nextX)) {
+    tetromino.col = nextX;
+  }
+}
+
+function rotateTetromino() {
+  const rotatedMatrix = rotate(tetromino.matrix);
+
+  if (isValidMove(rotatedMatrix, tetromino.row, tetromino.col)) {
+    tetromino.matrix = rotatedMatrix;
+  }
+}
+
+function moveTetrominoDown() {
+  if (isValidMove(tetromino.matrix, tetromino.row + 1, tetromino.col)) {
+    tetromino.row++;
+  }
+  else {
+    placeTetromino();
+  }
+}
 
   function showGameOver() {
     cancelAnimationFrame(rAF);
