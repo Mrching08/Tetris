@@ -16,3 +16,39 @@ canvas {
   background-color: rgb(20, 7, 7);
   border: solid rgb(30, 255, 0) 2px;
 }
+
+#left, #right, #rotate, #down {
+  background-color: #000;
+  border: solid rgb(30, 255, 0) 2px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 90ch;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+#left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: -27ch;
+}
+
+#right {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#rotate {
+  transform: rotate(deg);
+  margin-top: 80ch;
+}
+
+#down {
+  transform: rotate(deg);
+  margin-left: -12.6ch;
+  margin-top: 100ch;
+}
